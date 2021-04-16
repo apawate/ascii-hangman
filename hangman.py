@@ -1,3 +1,18 @@
+'''
+
+ASCII Hangman by Agastya Pawate
+
+A simple game of hangman implemented with ASCII characters.
+
+@author: Agastya Pawate
+
+April 15, 2021
+
+'''
+
+
+
+
 import os
 import random
 import time
