@@ -46,6 +46,8 @@ ropelist = ["\n\n\n\n\n\n\n", "\n\n\n\n\n\n\n", ropezero, ropeone, ropetwo, rope
 
 gallows_state = False
 
+guessed = True
+
 round_num = 0
 
 guess = ""
@@ -81,8 +83,16 @@ while guess != "quit":
         for letter in word:
             if letter not in guessletters:
                 print("_", end="")
+                guessed = False
             else:
                 print(letter, end="")
+        if guessed:
+            print()
+            print("You won!")
+            guess = "quit"
+            break
+        if not guessed:
+            guessed = True
         print()
         guess = input("Enter a guess: ")
         if len(guess) == 1:
