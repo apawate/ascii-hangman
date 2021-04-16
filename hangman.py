@@ -1,18 +1,21 @@
 import os
 import random
 import time
+from wordlists import words
 
 os.system("clear")
 
 options = ["easy", "medium", "hard", "crazy"]
 
-easywords = ["bat", "rat", "cat", "dog", "big", "hello", "word", "easy", "phone", "man", "woman", "book", "door", "wind", "tree"]
+hangman_words = words()
 
-mediumwords = ["frame", "computer", "apply", "world", "wallpaper", "notebook", "ocean", "waves", "handle", "chess", "calendar", "binder", "heater"]
+easywords = hangman_words.easywords
 
-hardwords = ["application", "rhythm", "xylophone", "lightning", "quizzical", "radioed", "architect", "sequoia", "tyrannical", "quirkiness"]
+mediumwords = hangman_words.mediumwords
 
-crazywords = ["prophaeletherium", "diophantus", "supercalifragilisticexpialidocious", "teleconferencing", "deoxyribonucleic", "developmentally", "metallurgical"]
+hardwords = hangman_words.hardwords
+
+crazywords = hangman_words.crazywords
 
 optionwords = [easywords, mediumwords, hardwords, crazywords]
 
@@ -49,6 +52,15 @@ guess = ""
 
 guessletters = []
 
+def list_to_string(lst):
+    string = ""
+    newstring = ""
+    for item in lst:
+        string = string + item
+    for letter in string:
+        newstring = newstring + letter + ", "
+    return newstring
+
 word = random.choice(optionwords[choice])
 
 while guess != "quit":
@@ -63,6 +75,9 @@ while guess != "quit":
         print("The word was", word)
         guess = "quit"
     else:
+        print()
+        print("Guesses so far:", list_to_string(guessletters))
+        print()
         for letter in word:
             if letter not in guessletters:
                 print("_", end="")
