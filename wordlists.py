@@ -1,6 +1,6 @@
 class words:
     def __init__(self):
-        self.easywords = EASY_WORDS
-        self.mediumwords = MEDIUM_WORDS
-        self.hardwords = HARD_WORDS
-        self.crazywords = CRAZY_WORDS
+        self.easywords = secrets.EASY_WORDS
+        self.mediumwords = secrets.MEDIUM_WORDS
+        self.hardwords = secrets.HARD_WORDS
+        self.crazywords = secrets.CRAZY_WORDS
