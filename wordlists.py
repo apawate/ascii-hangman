@@ -1,6 +1,8 @@
+import os
+
 class words:
     def __init__(self):
-        self.easywords = secrets.EASY_WORDS
-        self.mediumwords = secrets.MEDIUM_WORDS
-        self.hardwords = secrets.HARD_WORDS
-        self.crazywords = secrets.CRAZY_WORDS
+        self.easywords = os.getenv('EASY_WORDS')
+        self.mediumwords = os.getenv('MEDIUM_WORDS')
+        self.hardwords = os.getenv('HARD_WORDS')
+        self.crazywords = os.getenv('CRAZY_WORDS')
