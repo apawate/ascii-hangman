@@ -6,4 +6,4 @@ class words:
 
         self.hardwords = ["application", "rhythm", "xylophone", "lightning", "blythe", "quizzically", "radioed", "architect", "sequoia", "tyrannical", "quirkiness", "bicycle", "periodic", "methodology", "mockingbird", "mechanism", "thrifty", "brought", "cyclic"]
 
-        self.crazywords = ["prophaeletherium", "australopithecine", "velociraptor", "supercalifragilisticexpialidocious", "teleconferencing", "deoxyribonucleic", "developmentally", "metallurgical", "neurosurgeon", "cerebellum", "antebellum", "encyclopedia", "bibliographical", "autobiographically", "antidisestablishmentarianism", "triskadekaphobia"]
+        self.crazywords = ["prophaeletherium", "australopithecine", "velociraptor", "supercalifragilisticexpialidocious", "teleconferencing", "deoxyribonucleic", "developmentally", "metallurgical", "neurosurgeon", "cerebellum", "antebellum", "encyclopedia", "bibliographical", "autobiographically", "antidisestablishmentarianism", "triskadekaphobia", "lakkapragada"]
